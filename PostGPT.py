@@ -1,7 +1,13 @@
+#!/Users/matias/anaconda3/bin/python3
 import CheckGPT
-import openai
+from openai import OpenAI
 import configparser
 import os
+import logging
+
+# Initialize logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
+                    handlers=[logging.FileHandler("debug.log", mode='w'), logging.StreamHandler()])
 
 def normalize_compound_name(name):
     """Normalize the compound names to improve matching reliability."""
@@ -11,15 +17,16 @@ def normalize_group_name(name):
     """Normalize group names to ensure consistency."""
     return name.lower().strip()
 
-def prompt_gpt(api_key, prompt):
+def prompt_gpt(client, prompt):
     """Prompt GPT with a given text and return the response using the chat completions endpoint."""
-    response = openai.ChatCompletion.create(
-        model="gpt-4o",
-        messages=[{"role": "system", "content": "You are an advanced sorting assistant."},
-                  {"role": "user", "content": prompt}],
-        api_key=api_key
+    response = client.chat.completions.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": "You are sorting significant compounds from a mass spectrometer analysis."},
+            {"role": "user", "content": prompt}
+        ]
     )
-    return response.choices[0].message['content']
+    return response.choices[0].message.content
 
 def setup_logs():
     """Setup a directory for logs and return the path."""
@@ -42,7 +49,15 @@ def create_prompt(groups, compounds_to_sort):
     prompt = "Here are the compounds already sorted into groups:\n"
     for group, compounds in groups.items():
         prompt += f"### {group}:\n- " + "\n- ".join(compounds) + "\n"
-    prompt += ("\nPlease group these compounds based on their similar names, by specifying the group name next to each compound. Create new groups if necessary or move compounds between groups using the format 'move <compound> from <old_group> to <new_group>'. Format your response as 'Compound => Group' for sorting. Do not include comments or explanations in your commands. Sort or move these compounds for now:\n")
+    prompt += ("""\nMeticulously group these compounds based on their names, by specifying the group name next to each compound.
+    Create new groups if necessary or, if you notice a mistake, move compounds between groups using the format 'move <compound> from <old_group> to <new_group>'.
+    Format your response as 'Compound => Group' for sorting.
+    Group each compound into the most precise category based on its chemical structure, biological function, and standard biochemical classifications.
+    Take a nuanced approach to ensure that similar compounds like fatty acids, glycerolipids, glycerophospholipids, eicosanoids, vitamins, steroids, quinones, and lactones are identified and grouped together.
+    You will likely need a group called 'Other', but make an effort to find an accurate group for all compounds.
+    Do not include comments or explanations in your commands.
+    Do not include words like 'New' or 'Group' while sorting, and avoid mistakes such as attempting the command 'from none to new group'.
+    Group these compounds for now:\n""")
     prompt += "\n".join(f"- {comp}" for comp in compounds_to_sort)
     return prompt
 
@@ -104,6 +119,7 @@ def main():
     unique_file_path = 'Unique.txt'
     config_file = 'config.ini'
     api_key = read_api_key(config_file)
+    client = OpenAI(api_key=api_key)
     compounds = CheckGPT.load_compounds(unique_file_path)
     groups = {}
     already_sorted = set()
@@ -115,7 +131,7 @@ def main():
     while compounds:
         batch_to_sort = compounds[:10] if len(compounds) > 10 else compounds[:]
         prompt = create_prompt(groups, batch_to_sort)
-        gpt_output = prompt_gpt(api_key, prompt)
+        gpt_output = prompt_gpt(client, prompt)
         sorted_compounds = parse_gpt_output(gpt_output, groups, batch_to_sort, already_sorted, normalized_compounds)
         
         log_contents.append(f"Prompt:\n{prompt}\n")
