@@ -1,0 +1,94 @@
+LMST01010262
+7-oxo-11E-Tetradecenoic acid
+7E,9E,11-Dodecatrienyl acetate
+Pentalinonside
+Ambrettolic acid
+2-hydroxy-pentadecanoic acid
+FAHFA 2:0/16:2
+Minabeolide-7
+LMFA08020334
+N-(3-hydroxy-dodecanoyl)-homoserine lactone
+N-(3-hydroxy-decanoyl)-homoserine lactone
+15-isoLG hydroxylactam-ethanolamine
+Cer 12:2;2O/6:0
+N-[9,10-Dihydrojasmonoyl]isoleucine
+N-tetradecanoyl-homoserine lactone
+Methyl 7-oxo-11E-tetradecenoate
+5Z,8Z,11Z,14Z-Eicosatetraenedioic acid
+LMST04010145
+FAHFA 3:0/26:2
+2-hydroxy-tridecanoic acid
+ST 24:2;O4
+FAHFA 2:0/26:2
+Heterofibrin A3
+LMPK12120535
+17-phenyl-trinor-PGE2
+N-jasmonoyl-isoleucine
+Stoloniferone F
+10(R)-hydroxy-8Z-octadeceneic acid
+9-hydroxy-10-Octadecen-12-ynoic acid
+3-methyl-tetradecanedioic acid
+PGF2alpha-11-acetate methyl ester
+2-deoxyecdysone
+7,9,13,17-tetramethyl-7S,14S-dihydroxy-2E,4E,8E,10E,12E,16-octadecahexaenoic acid
+alpha-hydroxy myristic acid
+ST 24:1;O4
+3,7-Dimethyl-2E,6E-decadien-1,10-dioic acid
+17-hydroxy-1-oxo-2,3-seco-androstan-3-oic acid
+1a,1b-dihomo-15-deoxy-delta-12,14-PGJ2
+Khellin
+Ophiobolin R
+LMST05040008
+LMST01060018
+4E,7Z,10Z-Tridecatrienyl acetate
+methyl 8-[2-(2-formyl-vinyl)-3-hydroxy-5-oxo-cyclopentyl]-octanoate
+Teasterone
+PA(18:4(6Z,9Z,12Z,15Z)/0:0)
+6alpha-Hydroxycastasterone
+Zooxanthellactone
+12-hydroxy-5Z,8Z,10Z,14Z-Eicosatetraenoic acid
+FAHFA 2:0/22:5
+18-Oxocortisol
+FAHFA 2:0/18:0
+Calvasterol B
+PI O-18:0_16:3
+all-trans-7-hydroxyhexadeca-2,4,8,10-tetraenoic acid
+Cladosporester A
+Bufotalin
+16,16-dimethyl-PGD2
+testolic acid
+FAHFA 2:0/16:0
+13-keto-9Z-octadecenoic acid
+PI(22:0/12:0)
+N-decanoyl-homoserine lactone
+1,2-(8R,9R-epoxy-17E-octadecen-4,6-diynoyl)-3-(hexadecanoyl)sn-glycerol
+methyl 8-[3,5-epidioxy-2-(3-hydroperoxy-1-pentenyl)-cyclopentyl]-octanoate
+16-Glutaryloxy-1alpha,25-dihydroxyvitamin D3
+3E,9Z,12Z,15Z-octadecatetraenoic acid
+Daidzein
+FAHFA 9:0/9:0
+1-O-(2R-methoxy-4Z,7Z,10Z,13Z,16Z-docosapentaenyl)-sn-glycerol
+N-(7Z-tetradecenoyl)-homoserine lactone
+3,17-dihydroxy-5,9-dioxo-4,5-9,10-diseco-androsta-1(10),2-dien-4-oic acid
+Embelin
+PI(16:1(9Z)/22:4(7Z,10Z,13Z,16Z))
+7-hydroxy-10E,16-heptadecadien-8-ynoic acid
+PS 2:0_19:0
+Certonardosterol L
+9-phenyl nonanoic acid
+PG 2:0_17:0
+6-Hydroxyoctadeca-7,9-diynoic acid
+5Z,8Z,11Z-Eicosatrienedioic acid
+icas#18
+ST 24:1;O5
+4-keto pentadecanoic acid
+16,17-epoxy-DHA
+11-Hydroxy-9-tridecenoic acid
+(24R)-1alpha,24,25-trihydroxy-22-oxavitamin D3 / (24R)-1alpha,24,25-trihydroxy-22-oxacholecalciferol
+PI(16:0/0:0)
+FAHFA 22:5/6:0
+(9Z)-(7S,8S)-Dihydroxyoctadecenoic acid
+2-hydroxy palmitic acid
+2-methyl-tridecanedioic acid
+Mumiamicin
+2-oxo-heneicosanoic acid
