@@ -1,0 +1,382 @@
+2024-05-28 14:01:03,563 - INFO - Starting main process.
+2024-05-28 14:01:03,564 - INFO - Reading API key and assistant ID from config file.
+2024-05-28 14:01:03,564 - INFO - Initializing OpenAI client.
+2024-05-28 14:01:03,572 - INFO - Checking for existing assistant ID.
+2024-05-28 14:01:03,572 - INFO - Using existing assistant ID: asst_RESqOOda91AW1ayeMoVrge3y
+2024-05-28 14:01:03,572 - INFO - Parsing group: Steroids
+2024-05-28 14:01:03,572 - INFO - Parsing group: Fatty Acids
+2024-05-28 14:01:03,572 - INFO - Parsing group: Fatty Acid Derivatives
+2024-05-28 14:01:03,572 - INFO - Parsing group: Lactones
+2024-05-28 14:01:03,572 - INFO - Parsing group: Glycerolipids
+2024-05-28 14:01:03,572 - INFO - Parsing group: Other
+2024-05-28 14:01:03,572 - INFO - Parsing group: Eicosanoids
+2024-05-28 14:01:03,572 - INFO - Parsing group: Furans
+2024-05-28 14:01:03,572 - INFO - Parsing group: Sesterterpenoids
+2024-05-28 14:01:03,572 - WARNING - Skipping improperly formatted section: 
+2024-05-28 14:01:03,573 - INFO - Identifying 12 compounds most likely to be misclassified.
+2024-05-28 14:01:03,573 - INFO - Using GPT-4o to identify potentially misclassified compounds.
+2024-05-28 14:01:09,504 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-05-28 14:01:09,512 - INFO - User: Given the current classification of the following compounds into predefined categories, identify the 12 compounds most likely to be misclassified. Provide your response as a JSON object. Here are the groups:
+### Steroids:
+LMST01010262
+LMST04010145
+ST 24:2;O4
+2-deoxyecdysone
+ST 24:1;O4
+17-hydroxy-1-oxo-2,3-seco-androstan-3-oic acid
+LMST01060018
+Teasterone
+6alpha-Hydroxycastasterone
+18-Oxocortisol
+Calvasterol B
+Cladosporester A
+Bufotalin
+testolic acid
+3,17-dihydroxy-5,9-dioxo-4,5-9,10-diseco-androsta-1(10),2-dien-4-oic acid
+Certonardosterol L
+ST 24:1;O5
+(24R)-1alpha,24,25-trihydroxy-22-oxavitamin D3 / (24R)-1alpha,24,25-trihydroxy-22-oxacholecalciferol
+### Fatty Acids:
+7-oxo-11E-Tetradecenoic acid
+Ambrettolic acid
+2-hydroxy-pentadecanoic acid
+LMFA08020334
+5Z,8Z,11Z,14Z-Eicosatetraenedioic acid
+2-hydroxy-tridecanoic acid
+10(R)-hydroxy-8Z-octadeceneic acid
+9-hydroxy-10-Octadecen-12-ynoic acid
+3-methyl-tetradecanedioic acid
+7,9,13,17-tetramethyl-7S,14S-dihydroxy-2E,4E,8E,10E,12E,16-octadecahexaenoic acid
+alpha-hydroxy myristic acid
+3,7-Dimethyl-2E,6E-decadien-1,10-dioic acid
+all-trans-7-hydroxyhexadeca-2,4,8,10-tetraenoic acid
+13-keto-9Z-octadecenoic acid
+3E,9Z,12Z,15Z-octadecatetraenoic acid
+7-hydroxy-10E,16-heptadecadien-8-ynoic acid
+9-phenyl nonanoic acid
+6-Hydroxyoctadeca-7,9-diynoic acid
+5Z,8Z,11Z-Eicosatrienedioic acid
+11-Hydroxy-9-tridecenoic acid
+(9Z)-(7S,8S)-Dihydroxyoctadecenoic acid
+2-hydroxy palmitic acid
+2-methyl-tridecanedioic acid
+2-oxo-heneicosanoic acid
+### Fatty Acid Derivatives:
+7E,9E,11-Dodecatrienyl acetate
+Methyl 7-oxo-11E-tetradecenoate
+4E,7Z,10Z-Tridecatrienyl acetate
+4-keto pentadecanoic acid
+### Lactones:
+Pentalinonside
+Minabeolide-7
+N-(3-hydroxy-dodecanoyl)-homoserine lactone
+N-(3-hydroxy-decanoyl)-homoserine lactone
+N-tetradecanoyl-homoserine lactone
+Zooxanthellactone
+N-decanoyl-homoserine lactone
+N-(7Z-tetradecenoyl)-homoserine lactone
+### Glycerolipids:
+FAHFA 2:0/16:2
+Cer 12:2;2O/6:0
+FAHFA 3:0/26:2
+FAHFA 2:0/26:2
+LMST05040008
+PA(18:4(6Z,9Z,12Z,15Z)/0:0)
+FAHFA 2:0/22:5
+FAHFA 2:0/18:0
+PI O-18:0_16:3
+FAHFA 2:0/16:0
+PI(22:0/12:0)
+1,2-(8R,9R-epoxy-17E-octadecen-4,6-diynoyl)-3-(hexadecanoyl)sn-glycerol
+FAHFA 9:0/9:0
+1-O-(2R-methoxy-4Z,7Z,10Z,13Z,16Z-docosapentaenyl)-sn-glycerol
+PI(16:1(9Z)/22:4(7Z,10Z,13Z,16Z))
+PS 2:0_19:0
+PG 2:0_17:0
+PI(16:0/0:0)
+FAHFA 22:5/6:0
+### Other:
+15-isoLG hydroxylactam-ethanolamine
+N-[9,10-Dihydrojasmonoyl]isoleucine
+Heterofibrin A3
+LMPK12120535
+17-phenyl-trinor-PGE2
+N-jasmonoyl-isoleucine
+Stoloniferone F
+methyl 8-[2-(2-formyl-vinyl)-3-hydroxy-5-oxo-cyclopentyl]-octanoate
+methyl 8-[3,5-epidioxy-2-(3-hydroperoxy-1-pentenyl)-cyclopentyl]-octanoate
+16-Glutaryloxy-1alpha,25-dihydroxyvitamin D3
+Daidzein
+Embelin
+icas#18
+Mumiamicin
+### Eicosanoids:
+PGF2alpha-11-acetate methyl ester
+1a,1b-dihomo-15-deoxy-delta-12,14-PGJ2
+12-hydroxy-5Z,8Z,10Z,14Z-Eicosatetraenoic acid
+16,16-dimethyl-PGD2
+16,17-epoxy-DHA
+### Furans:
+Khellin
+### Sesterterpenoids:
+Ophiobolin R
+
+2024-05-28 14:01:09,512 - INFO - Assistant: ```json
+{
+    "misclassified_compounds": [
+        "LMFA08020334",
+        "3-methyl-tetradecanedioic acid",
+        "7E,9E,11-Dodecatrienyl acetate",
+        "Methyl 7-oxo-11E-tetradecenoate",
+        "FAHFA 9:0/9:0",
+        "LMPK12120535",
+        "Daidzein",
+        "Embelin",
+        "icas#18",
+        "Mumiamicin",
+        "PGF2alpha-11-acetate methyl ester",
+        "Khellin"
+    ]
+}
+```
+2024-05-28 14:01:09,513 - INFO - Starting browsing assistant process.
+2024-05-28 14:01:09,513 - INFO - Creating a new thread and running the assistant.
+2024-05-28 14:01:09,790 - INFO - HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-05-28 14:01:09,977 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/messages "HTTP/1.1 200 OK"
+2024-05-28 14:01:10,453 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/runs "HTTP/1.1 200 OK"
+2024-05-28 14:01:10,465 - INFO - User: Please classify the compound: LMFA08020334. Choose the correct group from the following categories: Steroids, Fatty Acids, Fatty Acid Derivatives, Lactones, Glycerolipids, Other, Eicosanoids, Furans, Sesterterpenoids. Provide your answer as a 'classification' json object.
+2024-05-28 14:01:10,465 - INFO - Waiting for the assistant run to complete.
+2024-05-28 14:01:10,626 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/runs/run_lIzS0riK6PZEzRyQojyTuQk8 "HTTP/1.1 200 OK"
+2024-05-28 14:01:11,511 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/runs/run_lIzS0riK6PZEzRyQojyTuQk8 "HTTP/1.1 200 OK"
+2024-05-28 14:01:11,518 - INFO - Performing search with query: LMFA08020334 compound classification
+2024-05-28 14:01:18,183 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/runs/run_lIzS0riK6PZEzRyQojyTuQk8/submit_tool_outputs "HTTP/1.1 200 OK"
+2024-05-28 14:01:18,335 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/runs/run_lIzS0riK6PZEzRyQojyTuQk8 "HTTP/1.1 200 OK"
+2024-05-28 14:01:19,620 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/runs/run_lIzS0riK6PZEzRyQojyTuQk8 "HTTP/1.1 200 OK"
+2024-05-28 14:01:19,625 - INFO - Tool outputs submitted successfully.
+2024-05-28 14:01:20,414 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/runs/run_lIzS0riK6PZEzRyQojyTuQk8 "HTTP/1.1 200 OK"
+2024-05-28 14:01:20,418 - INFO - Performing search with query: LMFA08020334 chemical database
+2024-05-28 14:01:27,092 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/runs/run_lIzS0riK6PZEzRyQojyTuQk8/submit_tool_outputs "HTTP/1.1 200 OK"
+2024-05-28 14:01:27,263 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/runs/run_lIzS0riK6PZEzRyQojyTuQk8 "HTTP/1.1 200 OK"
+2024-05-28 14:01:28,457 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/runs/run_lIzS0riK6PZEzRyQojyTuQk8 "HTTP/1.1 200 OK"
+2024-05-28 14:01:28,461 - INFO - Tool outputs submitted successfully.
+2024-05-28 14:01:29,217 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/runs/run_lIzS0riK6PZEzRyQojyTuQk8 "HTTP/1.1 200 OK"
+2024-05-28 14:01:29,221 - INFO - Performing search with query: LMFA08020334 compound PubChem
+2024-05-28 14:01:36,138 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/runs/run_lIzS0riK6PZEzRyQojyTuQk8/submit_tool_outputs "HTTP/1.1 200 OK"
+2024-05-28 14:01:36,344 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/runs/run_lIzS0riK6PZEzRyQojyTuQk8 "HTTP/1.1 200 OK"
+2024-05-28 14:01:37,575 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/runs/run_lIzS0riK6PZEzRyQojyTuQk8 "HTTP/1.1 200 OK"
+2024-05-28 14:01:38,757 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/runs/run_lIzS0riK6PZEzRyQojyTuQk8 "HTTP/1.1 200 OK"
+2024-05-28 14:01:38,760 - INFO - Tool outputs submitted successfully.
+2024-05-28 14:01:39,405 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/runs/run_lIzS0riK6PZEzRyQojyTuQk8 "HTTP/1.1 200 OK"
+2024-05-28 14:01:39,408 - INFO - Performing search with query: LMFA08020334 chemical classification
+2024-05-28 14:01:48,962 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/runs/run_lIzS0riK6PZEzRyQojyTuQk8/submit_tool_outputs "HTTP/1.1 200 OK"
+2024-05-28 14:01:49,147 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/runs/run_lIzS0riK6PZEzRyQojyTuQk8 "HTTP/1.1 200 OK"
+2024-05-28 14:01:50,869 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/runs/run_lIzS0riK6PZEzRyQojyTuQk8 "HTTP/1.1 200 OK"
+2024-05-28 14:01:50,876 - INFO - Tool outputs submitted successfully.
+2024-05-28 14:01:51,514 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_m2Y6FPFJzOb3zhnFw6tSGNVf/messages "HTTP/1.1 200 OK"
+2024-05-28 14:01:51,518 - INFO - Assistant: 
+  {
+  "classification": "Fatty Acids"
+  }
+2024-05-28 14:01:51,518 - INFO - Creating a new thread and running the assistant.
+2024-05-28 14:01:51,730 - INFO - HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-05-28 14:01:51,913 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_ov9Afy1hIzsUoE14VnPGV0Gz/messages "HTTP/1.1 200 OK"
+2024-05-28 14:01:52,361 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_ov9Afy1hIzsUoE14VnPGV0Gz/runs "HTTP/1.1 200 OK"
+2024-05-28 14:01:52,364 - INFO - User: Please classify the compound: 3-methyl-tetradecanedioic acid. Choose the correct group from the following categories: Steroids, Fatty Acids, Fatty Acid Derivatives, Lactones, Glycerolipids, Other, Eicosanoids, Furans, Sesterterpenoids. Provide your answer as a 'classification' json object.
+2024-05-28 14:01:52,364 - INFO - Waiting for the assistant run to complete.
+2024-05-28 14:01:52,524 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_ov9Afy1hIzsUoE14VnPGV0Gz/runs/run_7GPbUtzvc7cohzqqOxh4R7jc "HTTP/1.1 200 OK"
+2024-05-28 14:01:53,304 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_ov9Afy1hIzsUoE14VnPGV0Gz/runs/run_7GPbUtzvc7cohzqqOxh4R7jc "HTTP/1.1 200 OK"
+2024-05-28 14:01:54,027 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_ov9Afy1hIzsUoE14VnPGV0Gz/runs/run_7GPbUtzvc7cohzqqOxh4R7jc "HTTP/1.1 200 OK"
+2024-05-28 14:01:54,028 - INFO - Performing search with query: 3-methyl-tetradecanedioic acid classification
+2024-05-28 14:02:01,168 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_ov9Afy1hIzsUoE14VnPGV0Gz/runs/run_7GPbUtzvc7cohzqqOxh4R7jc/submit_tool_outputs "HTTP/1.1 200 OK"
+2024-05-28 14:02:01,326 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_ov9Afy1hIzsUoE14VnPGV0Gz/runs/run_7GPbUtzvc7cohzqqOxh4R7jc "HTTP/1.1 200 OK"
+2024-05-28 14:02:02,514 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_ov9Afy1hIzsUoE14VnPGV0Gz/runs/run_7GPbUtzvc7cohzqqOxh4R7jc "HTTP/1.1 200 OK"
+2024-05-28 14:02:02,515 - INFO - Tool outputs submitted successfully.
+2024-05-28 14:02:03,264 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_ov9Afy1hIzsUoE14VnPGV0Gz/messages "HTTP/1.1 200 OK"
+2024-05-28 14:02:03,265 - INFO - Assistant: 
+{
+  "classification": "Fatty Acid Derivatives"
+}
+2024-05-28 14:02:03,265 - INFO - Creating a new thread and running the assistant.
+2024-05-28 14:02:03,398 - INFO - HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-05-28 14:02:03,547 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_s7CVuRDL33u07dM099HdSIYN/messages "HTTP/1.1 200 OK"
+2024-05-28 14:02:03,882 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_s7CVuRDL33u07dM099HdSIYN/runs "HTTP/1.1 200 OK"
+2024-05-28 14:02:03,885 - INFO - User: Please classify the compound: 7E,9E,11-Dodecatrienyl acetate. Choose the correct group from the following categories: Steroids, Fatty Acids, Fatty Acid Derivatives, Lactones, Glycerolipids, Other, Eicosanoids, Furans, Sesterterpenoids. Provide your answer as a 'classification' json object.
+2024-05-28 14:02:03,886 - INFO - Waiting for the assistant run to complete.
+2024-05-28 14:02:04,022 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_s7CVuRDL33u07dM099HdSIYN/runs/run_yMgzLwAsPmTkwz6YUGiLQZz8 "HTTP/1.1 200 OK"
+2024-05-28 14:02:05,019 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_s7CVuRDL33u07dM099HdSIYN/runs/run_yMgzLwAsPmTkwz6YUGiLQZz8 "HTTP/1.1 200 OK"
+2024-05-28 14:02:05,755 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_s7CVuRDL33u07dM099HdSIYN/runs/run_yMgzLwAsPmTkwz6YUGiLQZz8 "HTTP/1.1 200 OK"
+2024-05-28 14:02:05,758 - INFO - Performing search with query: 7E,9E,11-Dodecatrienyl acetate compound classification
+2024-05-28 14:02:12,707 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_s7CVuRDL33u07dM099HdSIYN/runs/run_yMgzLwAsPmTkwz6YUGiLQZz8/submit_tool_outputs "HTTP/1.1 200 OK"
+2024-05-28 14:02:12,860 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_s7CVuRDL33u07dM099HdSIYN/runs/run_yMgzLwAsPmTkwz6YUGiLQZz8 "HTTP/1.1 200 OK"
+2024-05-28 14:02:14,033 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_s7CVuRDL33u07dM099HdSIYN/runs/run_yMgzLwAsPmTkwz6YUGiLQZz8 "HTTP/1.1 200 OK"
+2024-05-28 14:02:15,205 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_s7CVuRDL33u07dM099HdSIYN/runs/run_yMgzLwAsPmTkwz6YUGiLQZz8 "HTTP/1.1 200 OK"
+2024-05-28 14:02:15,206 - INFO - Tool outputs submitted successfully.
+2024-05-28 14:02:15,977 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_s7CVuRDL33u07dM099HdSIYN/messages "HTTP/1.1 200 OK"
+2024-05-28 14:02:15,978 - INFO - Assistant:  
+  {
+    "classification": "Fatty Acid Derivatives"
+  }
+2024-05-28 14:02:15,978 - INFO - Creating a new thread and running the assistant.
+2024-05-28 14:02:16,100 - INFO - HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-05-28 14:02:16,241 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_3OajnCToMEqmoA3iBk0RewR3/messages "HTTP/1.1 200 OK"
+2024-05-28 14:02:16,705 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_3OajnCToMEqmoA3iBk0RewR3/runs "HTTP/1.1 200 OK"
+2024-05-28 14:02:16,707 - INFO - User: Please classify the compound: Methyl 7-oxo-11E-tetradecenoate. Choose the correct group from the following categories: Steroids, Fatty Acids, Fatty Acid Derivatives, Lactones, Glycerolipids, Other, Eicosanoids, Furans, Sesterterpenoids. Provide your answer as a 'classification' json object.
+2024-05-28 14:02:16,708 - INFO - Waiting for the assistant run to complete.
+2024-05-28 14:02:16,896 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_3OajnCToMEqmoA3iBk0RewR3/runs/run_QGhfJgaOwOJ5qG7x6SHia9yW "HTTP/1.1 200 OK"
+2024-05-28 14:02:17,570 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_3OajnCToMEqmoA3iBk0RewR3/runs/run_QGhfJgaOwOJ5qG7x6SHia9yW "HTTP/1.1 200 OK"
+2024-05-28 14:02:18,340 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_3OajnCToMEqmoA3iBk0RewR3/runs/run_QGhfJgaOwOJ5qG7x6SHia9yW "HTTP/1.1 200 OK"
+2024-05-28 14:02:18,343 - INFO - Performing search with query: Methyl 7-oxo-11E-tetradecenoate chemical classification
+2024-05-28 14:02:25,625 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_3OajnCToMEqmoA3iBk0RewR3/runs/run_QGhfJgaOwOJ5qG7x6SHia9yW/submit_tool_outputs "HTTP/1.1 200 OK"
+2024-05-28 14:02:25,808 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_3OajnCToMEqmoA3iBk0RewR3/runs/run_QGhfJgaOwOJ5qG7x6SHia9yW "HTTP/1.1 200 OK"
+2024-05-28 14:02:27,027 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_3OajnCToMEqmoA3iBk0RewR3/runs/run_QGhfJgaOwOJ5qG7x6SHia9yW "HTTP/1.1 200 OK"
+2024-05-28 14:02:27,030 - INFO - Tool outputs submitted successfully.
+2024-05-28 14:02:27,673 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_3OajnCToMEqmoA3iBk0RewR3/messages "HTTP/1.1 200 OK"
+2024-05-28 14:02:27,676 - INFO - Assistant: {"classification": "Fatty Acid Derivatives"}
+2024-05-28 14:02:27,677 - INFO - Creating a new thread and running the assistant.
+2024-05-28 14:02:28,042 - INFO - HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-05-28 14:02:28,203 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_carsHfcUUhsDF5LEgAJCdf1r/messages "HTTP/1.1 200 OK"
+2024-05-28 14:02:28,535 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_carsHfcUUhsDF5LEgAJCdf1r/runs "HTTP/1.1 200 OK"
+2024-05-28 14:02:28,538 - INFO - User: Please classify the compound: FAHFA 9:0/9:0. Choose the correct group from the following categories: Steroids, Fatty Acids, Fatty Acid Derivatives, Lactones, Glycerolipids, Other, Eicosanoids, Furans, Sesterterpenoids. Provide your answer as a 'classification' json object.
+2024-05-28 14:02:28,539 - INFO - Waiting for the assistant run to complete.
+2024-05-28 14:02:28,718 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_carsHfcUUhsDF5LEgAJCdf1r/runs/run_2yVBwNnDnpnHGeIMx0yiJPGz "HTTP/1.1 200 OK"
+2024-05-28 14:02:29,479 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_carsHfcUUhsDF5LEgAJCdf1r/runs/run_2yVBwNnDnpnHGeIMx0yiJPGz "HTTP/1.1 200 OK"
+2024-05-28 14:02:30,162 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_carsHfcUUhsDF5LEgAJCdf1r/runs/run_2yVBwNnDnpnHGeIMx0yiJPGz "HTTP/1.1 200 OK"
+2024-05-28 14:02:30,819 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_carsHfcUUhsDF5LEgAJCdf1r/runs/run_2yVBwNnDnpnHGeIMx0yiJPGz "HTTP/1.1 200 OK"
+2024-05-28 14:02:31,580 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_carsHfcUUhsDF5LEgAJCdf1r/runs/run_2yVBwNnDnpnHGeIMx0yiJPGz "HTTP/1.1 200 OK"
+2024-05-28 14:02:31,583 - INFO - Performing search with query: FAHFA 9:0/9:0 compound classification
+2024-05-28 14:02:39,965 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_carsHfcUUhsDF5LEgAJCdf1r/runs/run_2yVBwNnDnpnHGeIMx0yiJPGz/submit_tool_outputs "HTTP/1.1 200 OK"
+2024-05-28 14:02:40,103 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_carsHfcUUhsDF5LEgAJCdf1r/runs/run_2yVBwNnDnpnHGeIMx0yiJPGz "HTTP/1.1 200 OK"
+2024-05-28 14:02:41,736 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_carsHfcUUhsDF5LEgAJCdf1r/runs/run_2yVBwNnDnpnHGeIMx0yiJPGz "HTTP/1.1 200 OK"
+2024-05-28 14:02:41,739 - INFO - Tool outputs submitted successfully.
+2024-05-28 14:02:42,456 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_carsHfcUUhsDF5LEgAJCdf1r/messages "HTTP/1.1 200 OK"
+2024-05-28 14:02:42,459 - INFO - Assistant: {
+  "classification": "Fatty Acid Derivatives"
+}
+2024-05-28 14:02:42,460 - INFO - Creating a new thread and running the assistant.
+2024-05-28 14:02:42,586 - INFO - HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-05-28 14:02:42,760 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_otOXRio1s0cKgZjhaY6VDuLJ/messages "HTTP/1.1 200 OK"
+2024-05-28 14:02:43,163 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_otOXRio1s0cKgZjhaY6VDuLJ/runs "HTTP/1.1 200 OK"
+2024-05-28 14:02:43,168 - INFO - User: Please classify the compound: LMPK12120535. Choose the correct group from the following categories: Steroids, Fatty Acids, Fatty Acid Derivatives, Lactones, Glycerolipids, Other, Eicosanoids, Furans, Sesterterpenoids. Provide your answer as a 'classification' json object.
+2024-05-28 14:02:43,168 - INFO - Waiting for the assistant run to complete.
+2024-05-28 14:02:43,327 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_otOXRio1s0cKgZjhaY6VDuLJ/runs/run_BVMTQKfuxSpk7xZeXoOmUrps "HTTP/1.1 200 OK"
+2024-05-28 14:02:43,980 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_otOXRio1s0cKgZjhaY6VDuLJ/runs/run_BVMTQKfuxSpk7xZeXoOmUrps "HTTP/1.1 200 OK"
+2024-05-28 14:02:44,710 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_otOXRio1s0cKgZjhaY6VDuLJ/runs/run_BVMTQKfuxSpk7xZeXoOmUrps "HTTP/1.1 200 OK"
+2024-05-28 14:02:44,713 - INFO - Performing search with query: LMPK12120535
+2024-05-28 14:02:51,301 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_otOXRio1s0cKgZjhaY6VDuLJ/runs/run_BVMTQKfuxSpk7xZeXoOmUrps/submit_tool_outputs "HTTP/1.1 200 OK"
+2024-05-28 14:02:51,723 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_otOXRio1s0cKgZjhaY6VDuLJ/runs/run_BVMTQKfuxSpk7xZeXoOmUrps "HTTP/1.1 200 OK"
+2024-05-28 14:02:52,939 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_otOXRio1s0cKgZjhaY6VDuLJ/runs/run_BVMTQKfuxSpk7xZeXoOmUrps "HTTP/1.1 200 OK"
+2024-05-28 14:02:52,941 - INFO - Tool outputs submitted successfully.
+2024-05-28 14:02:53,761 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_otOXRio1s0cKgZjhaY6VDuLJ/messages "HTTP/1.1 200 OK"
+2024-05-28 14:02:53,763 - INFO - Assistant: {"classification": "Other"}
+2024-05-28 14:02:53,764 - INFO - Creating a new thread and running the assistant.
+2024-05-28 14:02:53,890 - INFO - HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-05-28 14:02:54,119 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_P9MkuAKuWTydPZqVpeOdK3II/messages "HTTP/1.1 200 OK"
+2024-05-28 14:02:54,645 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_P9MkuAKuWTydPZqVpeOdK3II/runs "HTTP/1.1 200 OK"
+2024-05-28 14:02:54,648 - INFO - User: Please classify the compound: Daidzein. Choose the correct group from the following categories: Steroids, Fatty Acids, Fatty Acid Derivatives, Lactones, Glycerolipids, Other, Eicosanoids, Furans, Sesterterpenoids. Provide your answer as a 'classification' json object.
+2024-05-28 14:02:54,648 - INFO - Waiting for the assistant run to complete.
+2024-05-28 14:02:54,801 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_P9MkuAKuWTydPZqVpeOdK3II/runs/run_iIHfB3R0MOGFYPoDHhcBxi4T "HTTP/1.1 200 OK"
+2024-05-28 14:02:55,501 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_P9MkuAKuWTydPZqVpeOdK3II/runs/run_iIHfB3R0MOGFYPoDHhcBxi4T "HTTP/1.1 200 OK"
+2024-05-28 14:02:56,216 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_P9MkuAKuWTydPZqVpeOdK3II/runs/run_iIHfB3R0MOGFYPoDHhcBxi4T "HTTP/1.1 200 OK"
+2024-05-28 14:02:56,220 - INFO - Performing search with query: Daidzein chemical classification
+2024-05-28 14:03:03,033 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_P9MkuAKuWTydPZqVpeOdK3II/runs/run_iIHfB3R0MOGFYPoDHhcBxi4T/submit_tool_outputs "HTTP/1.1 200 OK"
+2024-05-28 14:03:03,238 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_P9MkuAKuWTydPZqVpeOdK3II/runs/run_iIHfB3R0MOGFYPoDHhcBxi4T "HTTP/1.1 200 OK"
+2024-05-28 14:03:04,473 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_P9MkuAKuWTydPZqVpeOdK3II/runs/run_iIHfB3R0MOGFYPoDHhcBxi4T "HTTP/1.1 200 OK"
+2024-05-28 14:03:04,477 - INFO - Tool outputs submitted successfully.
+2024-05-28 14:03:05,256 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_P9MkuAKuWTydPZqVpeOdK3II/messages "HTTP/1.1 200 OK"
+2024-05-28 14:03:05,258 - INFO - Assistant: {
+  "classification": "Other"
+}
+2024-05-28 14:03:05,259 - INFO - Creating a new thread and running the assistant.
+2024-05-28 14:03:05,391 - INFO - HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-05-28 14:03:05,540 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_wONGda2dmbDVoG2lfNkkYS4E/messages "HTTP/1.1 200 OK"
+2024-05-28 14:03:06,234 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_wONGda2dmbDVoG2lfNkkYS4E/runs "HTTP/1.1 200 OK"
+2024-05-28 14:03:06,237 - INFO - User: Please classify the compound: Embelin. Choose the correct group from the following categories: Steroids, Fatty Acids, Fatty Acid Derivatives, Lactones, Glycerolipids, Other, Eicosanoids, Furans, Sesterterpenoids. Provide your answer as a 'classification' json object.
+2024-05-28 14:03:06,237 - INFO - Waiting for the assistant run to complete.
+2024-05-28 14:03:06,424 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_wONGda2dmbDVoG2lfNkkYS4E/runs/run_8W6nD93zUrQedN00qoQpLAg1 "HTTP/1.1 200 OK"
+2024-05-28 14:03:07,228 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_wONGda2dmbDVoG2lfNkkYS4E/runs/run_8W6nD93zUrQedN00qoQpLAg1 "HTTP/1.1 200 OK"
+2024-05-28 14:03:07,231 - INFO - Performing search with query: Embelin compound classification
+2024-05-28 14:03:14,098 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_wONGda2dmbDVoG2lfNkkYS4E/runs/run_8W6nD93zUrQedN00qoQpLAg1/submit_tool_outputs "HTTP/1.1 200 OK"
+2024-05-28 14:03:14,268 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_wONGda2dmbDVoG2lfNkkYS4E/runs/run_8W6nD93zUrQedN00qoQpLAg1 "HTTP/1.1 200 OK"
+2024-05-28 14:03:15,423 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_wONGda2dmbDVoG2lfNkkYS4E/runs/run_8W6nD93zUrQedN00qoQpLAg1 "HTTP/1.1 200 OK"
+2024-05-28 14:03:15,426 - INFO - Tool outputs submitted successfully.
+2024-05-28 14:03:16,138 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_wONGda2dmbDVoG2lfNkkYS4E/messages "HTTP/1.1 200 OK"
+2024-05-28 14:03:16,141 - INFO - Assistant: 
+{
+  "classification": "Fatty Acid Derivatives"
+}
+2024-05-28 14:03:16,142 - INFO - Creating a new thread and running the assistant.
+2024-05-28 14:03:16,272 - INFO - HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-05-28 14:03:16,421 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_nExlYO3qzlXEXV3lFuHvZ5Mt/messages "HTTP/1.1 200 OK"
+2024-05-28 14:03:17,218 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_nExlYO3qzlXEXV3lFuHvZ5Mt/runs "HTTP/1.1 200 OK"
+2024-05-28 14:03:17,222 - INFO - User: Please classify the compound: icas#18. Choose the correct group from the following categories: Steroids, Fatty Acids, Fatty Acid Derivatives, Lactones, Glycerolipids, Other, Eicosanoids, Furans, Sesterterpenoids. Provide your answer as a 'classification' json object.
+2024-05-28 14:03:17,222 - INFO - Waiting for the assistant run to complete.
+2024-05-28 14:03:17,435 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_nExlYO3qzlXEXV3lFuHvZ5Mt/runs/run_2Pz5qz4hPrOJSTUvrRuBtbn6 "HTTP/1.1 200 OK"
+2024-05-28 14:03:18,122 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_nExlYO3qzlXEXV3lFuHvZ5Mt/runs/run_2Pz5qz4hPrOJSTUvrRuBtbn6 "HTTP/1.1 200 OK"
+2024-05-28 14:03:18,898 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_nExlYO3qzlXEXV3lFuHvZ5Mt/runs/run_2Pz5qz4hPrOJSTUvrRuBtbn6 "HTTP/1.1 200 OK"
+2024-05-28 14:03:18,902 - INFO - Performing search with query: ICas#18 compound classification
+2024-05-28 14:03:25,576 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_nExlYO3qzlXEXV3lFuHvZ5Mt/runs/run_2Pz5qz4hPrOJSTUvrRuBtbn6/submit_tool_outputs "HTTP/1.1 200 OK"
+2024-05-28 14:03:25,715 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_nExlYO3qzlXEXV3lFuHvZ5Mt/runs/run_2Pz5qz4hPrOJSTUvrRuBtbn6 "HTTP/1.1 200 OK"
+2024-05-28 14:03:26,890 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_nExlYO3qzlXEXV3lFuHvZ5Mt/runs/run_2Pz5qz4hPrOJSTUvrRuBtbn6 "HTTP/1.1 200 OK"
+2024-05-28 14:03:28,333 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_nExlYO3qzlXEXV3lFuHvZ5Mt/runs/run_2Pz5qz4hPrOJSTUvrRuBtbn6 "HTTP/1.1 200 OK"
+2024-05-28 14:03:29,502 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_nExlYO3qzlXEXV3lFuHvZ5Mt/runs/run_2Pz5qz4hPrOJSTUvrRuBtbn6 "HTTP/1.1 200 OK"
+2024-05-28 14:03:29,505 - INFO - Tool outputs submitted successfully.
+2024-05-28 14:03:30,294 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_nExlYO3qzlXEXV3lFuHvZ5Mt/runs/run_2Pz5qz4hPrOJSTUvrRuBtbn6 "HTTP/1.1 200 OK"
+2024-05-28 14:03:30,297 - INFO - Performing search with query: ICas#18 chemical compound
+2024-05-28 14:03:38,159 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_nExlYO3qzlXEXV3lFuHvZ5Mt/runs/run_2Pz5qz4hPrOJSTUvrRuBtbn6/submit_tool_outputs "HTTP/1.1 200 OK"
+2024-05-28 14:03:38,334 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_nExlYO3qzlXEXV3lFuHvZ5Mt/runs/run_2Pz5qz4hPrOJSTUvrRuBtbn6 "HTTP/1.1 200 OK"
+2024-05-28 14:03:39,530 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_nExlYO3qzlXEXV3lFuHvZ5Mt/runs/run_2Pz5qz4hPrOJSTUvrRuBtbn6 "HTTP/1.1 200 OK"
+2024-05-28 14:03:39,533 - INFO - Tool outputs submitted successfully.
+2024-05-28 14:03:40,282 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_nExlYO3qzlXEXV3lFuHvZ5Mt/messages "HTTP/1.1 200 OK"
+2024-05-28 14:03:40,285 - INFO - Assistant: 
+  {"classification":"Other"}
+2024-05-28 14:03:40,285 - INFO - Creating a new thread and running the assistant.
+2024-05-28 14:03:40,412 - INFO - HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-05-28 14:03:40,558 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_385Z45vDvN0vfvsTkmRqkXqX/messages "HTTP/1.1 200 OK"
+2024-05-28 14:03:40,910 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_385Z45vDvN0vfvsTkmRqkXqX/runs "HTTP/1.1 200 OK"
+2024-05-28 14:03:40,913 - INFO - User: Please classify the compound: Mumiamicin. Choose the correct group from the following categories: Steroids, Fatty Acids, Fatty Acid Derivatives, Lactones, Glycerolipids, Other, Eicosanoids, Furans, Sesterterpenoids. Provide your answer as a 'classification' json object.
+2024-05-28 14:03:40,913 - INFO - Waiting for the assistant run to complete.
+2024-05-28 14:03:41,302 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_385Z45vDvN0vfvsTkmRqkXqX/runs/run_3j7KiksyTSsYcTHgQSy2v12Q "HTTP/1.1 200 OK"
+2024-05-28 14:03:42,021 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_385Z45vDvN0vfvsTkmRqkXqX/runs/run_3j7KiksyTSsYcTHgQSy2v12Q "HTTP/1.1 200 OK"
+2024-05-28 14:03:42,022 - INFO - Performing search with query: Mumiamicin compound classification
+2024-05-28 14:03:49,168 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_385Z45vDvN0vfvsTkmRqkXqX/runs/run_3j7KiksyTSsYcTHgQSy2v12Q/submit_tool_outputs "HTTP/1.1 200 OK"
+2024-05-28 14:03:49,317 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_385Z45vDvN0vfvsTkmRqkXqX/runs/run_3j7KiksyTSsYcTHgQSy2v12Q "HTTP/1.1 200 OK"
+2024-05-28 14:03:50,741 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_385Z45vDvN0vfvsTkmRqkXqX/runs/run_3j7KiksyTSsYcTHgQSy2v12Q "HTTP/1.1 200 OK"
+2024-05-28 14:03:50,745 - INFO - Tool outputs submitted successfully.
+2024-05-28 14:03:51,408 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_385Z45vDvN0vfvsTkmRqkXqX/messages "HTTP/1.1 200 OK"
+2024-05-28 14:03:51,411 - INFO - Assistant: {"classification": "Other"}
+2024-05-28 14:03:51,411 - INFO - Creating a new thread and running the assistant.
+2024-05-28 14:03:51,549 - INFO - HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-05-28 14:03:51,789 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_gNSjEzIr48lhqGyrk2y756Ke/messages "HTTP/1.1 200 OK"
+2024-05-28 14:03:52,312 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_gNSjEzIr48lhqGyrk2y756Ke/runs "HTTP/1.1 200 OK"
+2024-05-28 14:03:52,315 - INFO - User: Please classify the compound: PGF2alpha-11-acetate methyl ester. Choose the correct group from the following categories: Steroids, Fatty Acids, Fatty Acid Derivatives, Lactones, Glycerolipids, Other, Eicosanoids, Furans, Sesterterpenoids. Provide your answer as a 'classification' json object.
+2024-05-28 14:03:52,315 - INFO - Waiting for the assistant run to complete.
+2024-05-28 14:03:52,475 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_gNSjEzIr48lhqGyrk2y756Ke/runs/run_IgWL4KjdPVW3oWM8rV9Fzr2M "HTTP/1.1 200 OK"
+2024-05-28 14:03:53,123 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_gNSjEzIr48lhqGyrk2y756Ke/runs/run_IgWL4KjdPVW3oWM8rV9Fzr2M "HTTP/1.1 200 OK"
+2024-05-28 14:03:54,013 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_gNSjEzIr48lhqGyrk2y756Ke/runs/run_IgWL4KjdPVW3oWM8rV9Fzr2M "HTTP/1.1 200 OK"
+2024-05-28 14:03:54,017 - INFO - Performing search with query: PGF2alpha-11-acetate methyl ester compound classification
+2024-05-28 14:04:02,147 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_gNSjEzIr48lhqGyrk2y756Ke/runs/run_IgWL4KjdPVW3oWM8rV9Fzr2M/submit_tool_outputs "HTTP/1.1 200 OK"
+2024-05-28 14:04:02,390 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_gNSjEzIr48lhqGyrk2y756Ke/runs/run_IgWL4KjdPVW3oWM8rV9Fzr2M "HTTP/1.1 200 OK"
+2024-05-28 14:04:03,537 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_gNSjEzIr48lhqGyrk2y756Ke/runs/run_IgWL4KjdPVW3oWM8rV9Fzr2M "HTTP/1.1 200 OK"
+2024-05-28 14:04:03,540 - INFO - Tool outputs submitted successfully.
+2024-05-28 14:04:04,570 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_gNSjEzIr48lhqGyrk2y756Ke/messages "HTTP/1.1 200 OK"
+2024-05-28 14:04:04,574 - INFO - Assistant: {
+  "classification": "Fatty Acid Derivatives"
+}
+2024-05-28 14:04:04,575 - INFO - Creating a new thread and running the assistant.
+2024-05-28 14:04:04,737 - INFO - HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-05-28 14:04:05,419 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_JuIspNHrIdh8ROhdaufetMaT/messages "HTTP/1.1 200 OK"
+2024-05-28 14:04:05,945 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_JuIspNHrIdh8ROhdaufetMaT/runs "HTTP/1.1 200 OK"
+2024-05-28 14:04:05,948 - INFO - User: Please classify the compound: Khellin. Choose the correct group from the following categories: Steroids, Fatty Acids, Fatty Acid Derivatives, Lactones, Glycerolipids, Other, Eicosanoids, Furans, Sesterterpenoids. Provide your answer as a 'classification' json object.
+2024-05-28 14:04:05,948 - INFO - Waiting for the assistant run to complete.
+2024-05-28 14:04:06,098 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_JuIspNHrIdh8ROhdaufetMaT/runs/run_Rek3ZKPtn1G5n9PKVd4C5AUQ "HTTP/1.1 200 OK"
+2024-05-28 14:04:06,788 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_JuIspNHrIdh8ROhdaufetMaT/runs/run_Rek3ZKPtn1G5n9PKVd4C5AUQ "HTTP/1.1 200 OK"
+2024-05-28 14:04:06,793 - INFO - Performing search with query: Khellin compound classification
+2024-05-28 14:04:13,831 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_JuIspNHrIdh8ROhdaufetMaT/runs/run_Rek3ZKPtn1G5n9PKVd4C5AUQ/submit_tool_outputs "HTTP/1.1 200 OK"
+2024-05-28 14:04:14,040 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_JuIspNHrIdh8ROhdaufetMaT/runs/run_Rek3ZKPtn1G5n9PKVd4C5AUQ "HTTP/1.1 200 OK"
+2024-05-28 14:04:15,198 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_JuIspNHrIdh8ROhdaufetMaT/runs/run_Rek3ZKPtn1G5n9PKVd4C5AUQ "HTTP/1.1 200 OK"
+2024-05-28 14:04:15,201 - INFO - Tool outputs submitted successfully.
+2024-05-28 14:04:15,906 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_JuIspNHrIdh8ROhdaufetMaT/messages "HTTP/1.1 200 OK"
+2024-05-28 14:04:15,909 - INFO - Assistant: 
+{
+  "classification": "Lactones"
+}
