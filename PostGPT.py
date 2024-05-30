@@ -20,7 +20,7 @@ def normalize_group_name(name):
 def prompt_gpt(client, prompt):
     """Prompt GPT with a given text and return the response using the chat completions endpoint."""
     response = client.chat.completions.create(
-        model="gpt-4",
+        model="gpt-4o",
         messages=[
             {"role": "system", "content": "You are sorting significant compounds from a mass spectrometer analysis."},
             {"role": "user", "content": prompt}
