@@ -1,7 +1,6 @@
 library(dplyr)
 library(stringr)
 
-# Load the data from CSV files
 score1 <- read.csv("score1.csv")
 score2 <- read.csv("score2.csv")
 score3 <- read.csv("score3.csv")
