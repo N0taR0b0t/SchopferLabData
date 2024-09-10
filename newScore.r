@@ -44,7 +44,6 @@ print("Loading default data...")
 default_data_path <- "Compounds.csv"
 default_data <- tryCatch({
   data <- fread(default_data_path)
-  # Calculate safe ranges for sliders
   list(
     peak = safe_range(data$`Peak Rating (Max.)`),
     pvalue = safe_range(data$`Adj. P-value: (cla-no2) / (ctrol)`, log_scale = TRUE),
