@@ -8,7 +8,6 @@ def read_api_key_and_assistant_id(config_file):
         config.read(config_file)
         api_key = config.get('openai', 'apikey', fallback=None)
         assistant_id = config.get('openai', 'assistant_id', fallback=None)
-        
         if not api_key or not assistant_id:
             logging.error("API key or assistant ID not found in the config file.")
             return None, None
