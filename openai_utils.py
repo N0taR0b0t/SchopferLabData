@@ -227,7 +227,6 @@ def browsing_assistant(client, assistant_id, groups, compounds_to_verify):
                     content = message.content[0].text.value
                     chat_logger.info(f"Assistant: {content}")
                     print(f"Assistant's response for {compound}:\n{content}")
-
                     # Parse the JSON response and check if the suggested group is among the existing categories
                     try:
                         response_json = json.loads(content)
