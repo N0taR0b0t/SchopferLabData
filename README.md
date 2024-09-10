@@ -1,1 +1,1 @@
-Test Files and Scripts for Compound Analysis
+Test Files and Scripts for Lab Compound Analysis
