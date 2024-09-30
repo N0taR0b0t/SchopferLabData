@@ -1,7 +1,7 @@
 import re
 
 def load_compounds(file_path):
-    """Load compounds from a given file and return a list of compounds."""
+    # Load compounds from a given file and return a list of compounds.
     with open(file_path, 'r', encoding='utf-8') as file:
         compounds = [line.strip() for line in file if line.strip()]
     return compounds
