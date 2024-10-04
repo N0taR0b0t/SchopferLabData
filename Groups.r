@@ -35,7 +35,6 @@ similar_compounds <- top_scores %>%
   summarize(Compounds = toString(unique(Name)), Count = n(), .groups = 'drop') %>%
   filter(Count > 1)  # Exclude groups with only one compound
 
-# Order by Count descending
 similar_compounds <- similar_compounds %>% arrange(desc(Count))
 
 write.csv(similar_compounds, "similar_compounds.csv", row.names = FALSE)
