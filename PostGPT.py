@@ -144,7 +144,6 @@ def main():
             print("Warning: No compounds were sorted in this iteration.")
             break  # Optionally break to avoid infinite loop if nothing is being sorted
 
-    # Once all processing is complete, write the log file
     log_file_path = os.path.join(setup_logs(), "conversation.log")
     write_to_file(log_file_path, "\n".join(log_contents))
 
